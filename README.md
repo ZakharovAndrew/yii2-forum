@@ -1,6 +1,51 @@
 # yii2-forum
 Yii2 Forum
 
+## 🚀 Installation
+
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+
+Either run
+
+```
+$ composer require zakharov-andrew/yii2-forum
+```
+or add
+
+```
+"zakharov-andrew/yii2-forum": "*"
+```
+
+to the ```require``` section of your ```composer.json``` file.
+
+Subsequently, run
+
+```
+./yii migrate/up --migrationPath=@vendor/zakharov-andrew/yii2-forum/migrations
+```
+
+in order to create the settings table in your database.
+
+Or add to console config
+
+```php
+return [
+    // ...
+    'controllerMap' => [
+        // ...
+        'migrate' => [
+            'class' => 'yii\console\controllers\MigrateController',
+            'migrationPath' => [
+                '@console/migrations', // Default migration folder
+                '@vendor/zakharov-andrew/yii2-forum/src/migrations'
+            ]
+        ]
+        // ...
+    ]
+    // ...
+];
+```
+
 ## 👥 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
