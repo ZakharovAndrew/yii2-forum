@@ -17,8 +17,8 @@ class m250801_123000_create_forum_tables extends Migration
             'title' => $this->string(255)->notNull(),
             'description' => $this->text(),
             'order' => $this->integer()->defaultValue(0),
-            'created_at' => $this->integer(),
-            'updated_at' => $this->integer(),
+            'created_at' => $this->timestamp()->defaultValue( new \yii\db\Expression('CURRENT_TIMESTAMP') ),
+            'updated_at' => $this->timestamp()
         ], $tableOptions);
 
         // Подфорумы (разделы внутри категорий)
@@ -28,8 +28,8 @@ class m250801_123000_create_forum_tables extends Migration
             'title' => $this->string(255)->notNull(),
             'description' => $this->text(),
             'order' => $this->integer()->defaultValue(0),
-            'created_at' => $this->integer(),
-            'updated_at' => $this->integer(),
+            'created_at' => $this->timestamp()->defaultValue( new \yii\db\Expression('CURRENT_TIMESTAMP') ),
+            'updated_at' => $this->timestamp(),
         ], $tableOptions);
 
         // Темы (топики)
@@ -40,8 +40,8 @@ class m250801_123000_create_forum_tables extends Migration
             'title' => $this->string(255)->notNull(),
             'status' => $this->smallInteger()->defaultValue(1), // 1=активно, 0=закрыто, 2=удалено
             'views' => $this->integer()->defaultValue(0),
-            'created_at' => $this->integer(),
-            'updated_at' => $this->integer(),
+            'created_at' => $this->timestamp()->defaultValue( new \yii\db\Expression('CURRENT_TIMESTAMP') ),
+            'updated_at' => $this->timestamp(),
         ], $tableOptions);
 
         // Сообщения (посты)
@@ -51,8 +51,8 @@ class m250801_123000_create_forum_tables extends Migration
             'user_id' => $this->integer()->notNull(),
             'content' => $this->text()->notNull(),
             'likes' => $this->integer()->defaultValue(0),
-            'created_at' => $this->integer(),
-            'updated_at' => $this->integer(),
+            'created_at' => $this->timestamp()->defaultValue( new \yii\db\Expression('CURRENT_TIMESTAMP') ),
+            'updated_at' => $this->timestamp(),
         ], $tableOptions);
 
         // Теги для тем
@@ -71,14 +71,14 @@ class m250801_123000_create_forum_tables extends Migration
         $this->createTable('{{%forum_subscription}}', [
             'user_id' => $this->integer()->notNull(),
             'topic_id' => $this->integer()->notNull(),
-            'created_at' => $this->integer(),
+            'created_at' => $this->timestamp()->defaultValue( new \yii\db\Expression('CURRENT_TIMESTAMP') ),
         ], $tableOptions);
 
         // Модераторы форумов
         $this->createTable('{{%forum_moderator}}', [
             'user_id' => $this->integer()->notNull(),
             'forum_id' => $this->integer()->notNull(),
-            'created_at' => $this->integer(),
+            'created_at' => $this->timestamp()->defaultValue( new \yii\db\Expression('CURRENT_TIMESTAMP') ),
         ], $tableOptions);
 
         // Индексы и внешние ключи
@@ -122,7 +122,7 @@ class m250801_123000_create_forum_tables extends Migration
             'fk-forum_post-user_id',
             '{{%forum_post}}',
             'user_id',
-            '{{%user}}',
+            '{{%users}}',
             'id',
             'CASCADE'
         );
@@ -155,7 +155,7 @@ class m250801_123000_create_forum_tables extends Migration
             'fk-forum_subscription-user_id',
             '{{%forum_subscription}}',
             'user_id',
-            '{{%user}}',
+            '{{%users}}',
             'id',
             'CASCADE'
         );
@@ -173,7 +173,7 @@ class m250801_123000_create_forum_tables extends Migration
             'fk-forum_moderator-user_id',
             '{{%forum_moderator}}',
             'user_id',
-            '{{%user}}',
+            '{{%users}}',
             'id',
             'CASCADE'
         );
