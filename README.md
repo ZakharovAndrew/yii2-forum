@@ -1,11 +1,34 @@
 # 🚀 Yii2 Forum Module  
 
+<div align="center">
+
+[![Latest Stable Version](https://poser.pugx.org/zakharov-andrew/yii2-forum/v/stable)](https://packagist.org/packages/zakharov-andrew/yii2-forum)
+[![Total Downloads](https://poser.pugx.org/zakharov-andrew/yii2-forum/downloads)](https://packagist.org/packages/zakharov-andrew/yii2-forum)
+[![License](https://poser.pugx.org/zakharov-andrew/yii2-forum/license)](https://packagist.org/packages/zakharov-andrew/yii2-forum)
+[![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
+
+</div>
+
+<p align="center">
 **A powerful, flexible, and lightweight forum engine for Yii2**  
 ✨ Modern features | 🛠 Easy integration | ⚡ High performance  
+</p>
+
+<p align="center">
+  <a href="#-features">Features</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#-usage">Usage</a> •
+  <a href="#-contributing">Contributing</a> •
+  <a href="#-license">License</a>
+</p>
+
+<p align="center">
+  <a href="README.ru.md">🇷🇺 Русская версия</a>
+</p>
 
 ---
 
-## 🔥 **Key Features**  
+## 🔥 **Features**  
 
 ### 🗂 **Forum Structure**  
 - **Categories & Subforums** – Tree-like organization  
