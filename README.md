@@ -1,6 +1,8 @@
-# 🚀 Yii2 Forum Module  
+
 
 <div align="center">
+
+# 🚀 Yii2 Forum Module  
 
 [![Latest Stable Version](https://poser.pugx.org/zakharov-andrew/yii2-forum/v/stable)](https://packagist.org/packages/zakharov-andrew/yii2-forum)
 [![Total Downloads](https://poser.pugx.org/zakharov-andrew/yii2-forum/downloads)](https://packagist.org/packages/zakharov-andrew/yii2-forum)
