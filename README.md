@@ -54,7 +54,7 @@ A powerful, flexible, and lightweight forum engine for Yii2
 - **REST API** – For mobile apps & SPA  
 - **SEO-Friendly** – Slugs, meta tags, sitemap  
 - **Caching** – Redis, Memcached, or file-based  
-- **ElasticSearch** – Blazing-fast search  
+- **Sphinx** – fast search  
 
 ## 🚀 Installation
 
