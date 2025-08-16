@@ -1,5 +1,35 @@
-# yii2-forum
-Yii2 Forum
+# 🚀 Yii2 Forum Module  
+
+**A powerful, flexible, and lightweight forum engine for Yii2**  
+✨ Modern features | 🛠 Easy integration | ⚡ High performance  
+
+---
+
+## 🔥 **Key Features**  
+
+### 🗂 **Forum Structure**  
+- **Categories & Subforums** – Tree-like organization  
+- **Topics & Threads** – Discussions with pagination  
+- **Posts & Replies** – Rich text (BBcode/Markdown)  
+- **Tags & Labels** – Categorize content (#help, #bug)  
+
+### 👥 **User Management**  
+- **Roles & Permissions** (RBAC) – Admin, Moderator, User  
+- **User Profiles** – Avatars, signatures, activity history  
+- **Reputation System** – Likes, upvotes, badges (🌟)  
+- **Notifications** – Replies, mentions, moderation alerts  
+
+### 🛡 **Moderation Tools**  
+- **Report System** – Flag inappropriate content  
+- **Soft Delete** – Restore posts if needed  
+- **Ban Users** – Temporary/permanent bans  
+- **IP Tracking** – Prevent spam attacks  
+
+### ⚙ **Technical Highlights**  
+- **REST API** – For mobile apps & SPA  
+- **SEO-Friendly** – Slugs, meta tags, sitemap  
+- **Caching** – Redis, Memcached, or file-based  
+- **ElasticSearch** – Blazing-fast search  
 
 ## 🚀 Installation
 
@@ -59,3 +89,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+🚀 **Star us on GitHub if you love it!** ⭐️
