@@ -17,5 +17,14 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-    'Name' => 'Имя'
+    'Name' => 'Имя',
+
+    'Forum Name' => 'Название форума',
+    'Category' => 'Категория',
+    'Description' => 'Описание',
+    'Sort Order' => 'Порядок сортировки',
+    
+    // Validation messages
+    'Title cannot be blank.' => 'Название не может быть пустым.',
+    'Category cannot be blank.' => 'Категория должна быть выбрана.',
 ];
