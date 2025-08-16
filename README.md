@@ -12,7 +12,7 @@
 </div>
 
 <p align="center">
-**A powerful, flexible, and lightweight forum engine for Yii2**  
+A powerful, flexible, and lightweight forum engine for Yii2
 ✨ Modern features | 🛠 Easy integration | ⚡ High performance  
 </p>
 
