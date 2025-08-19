@@ -27,4 +27,24 @@ return [
     // Validation messages
     'Title cannot be blank.' => 'Название не может быть пустым.',
     'Category cannot be blank.' => 'Категория должна быть выбрана.',
+
+    // Topic Attribute labels
+    'Topic Title' => 'Название темы',
+    'Forum' => 'Форум',
+    'Author' => 'Автор',
+    'Content' => 'Содержание',
+    'Status' => 'Статус',
+    'Views' => 'Просмотры',
+    'Pinned' => 'Закреплено',
+    'Locked' => 'Закрыто',
+    
+    // Status options
+    'Active' => 'Активно',
+    'Closed' => 'Закрыто',
+    'Deleted' => 'Удалено',
+    
+    // Validation messages
+    'Title cannot be blank.' => 'Название темы не может быть пустым.',
+    'Content cannot be blank.' => 'Содержание темы не может быть пустым.',
+    'Forum cannot be blank.' => 'Форум должен быть выбран.',
 ];
